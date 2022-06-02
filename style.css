@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(14, 124, 124);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.wraper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  margin: 0 auto;
+  padding: 2.5rem 2.5rem .8rem;
+  min-height: 400px;
+  background-color: #3D3C3E;
+  border-radius: 4px;
+}
+
+.clc-title,
+.clc-form {
+  flex: 1;
+}
+
+#result {
+  flex-basis: 100%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: -20px;
+  display: inline-block;
+}
+
+.clc-title {
+  color: #0db8b8;
+  margin-left: 1rem;
+  border-left: 4px solid #0db8b8;
+  padding-left: 1rem;
+}
+
+.clc-form,
+input {
+  display: block;
+  width: 100%;
+  color: white;
+  font-size: 1.125rem;
+}
+
+.clc-form input {
+  margin-bottom: .5rem;
+  padding: .5rem 0;
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+input:focus {
+  outline: none;
+  color: #fff;
+}
+
+#btn {
+  padding: .3rem 0;
+  color: #0db8b8;
+  font-weight: 700;
+  background-color: inherit;
+  border: none;
+  margin-top: .5rem;
+  cursor: pointer;
+  /* text-shadow: 0px 0px 1px rgb(169, 169, 169); */
+}
